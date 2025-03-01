@@ -9,8 +9,9 @@ import author from "../../src/assets/A.jpg";
 import alvaro from "../../src/assets/dinkoalvro.jpg";
 import scot from "../../src/assets/G .jpg";
 import rob from "../../src/assets/ROB.jpg";
+
 import { FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6"; // X logo for Twitter
+import { FaXTwitter } from "react-icons/fa6";
 
 const AboutPage = () => {
   const teamMembers = [
