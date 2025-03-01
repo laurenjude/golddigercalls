@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../../src/assets/Golddiggers logo .png";
+import logo from "../../src/assets/updated LOGO.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -45,37 +45,38 @@ const Navbar = () => {
         {/* Navigation Links (Desktop) */}
         <ul className="navbar-links">
           <li>
-            <a href="/" className="nav-link">
+            <Link to="/" className="nav-link" onClick={scrollToTop}>
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/services" className="nav-link">
+            <Link to="/services" className="nav-link" onClick={scrollToTop}>
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="nav-link">
+            <Link to="/about" className="nav-link" onClick={scrollToTop}>
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/projects" className="nav-link">
+            <Link to="/projects" className="nav-link" onClick={scrollToTop}>
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contact" className="nav-link">
+            <Link to="/contact" className="nav-link" onClick={scrollToTop}>
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
-
         {/* Button (Desktop) */}
         <div className="navbar-button">
           <a
             href="https://calendly.com/golddiggers435/golddiggers-meeting"
             className="btn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             BOOK A MEETING
           </a>

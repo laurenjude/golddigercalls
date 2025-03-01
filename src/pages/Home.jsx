@@ -74,7 +74,7 @@ const Home = () => {
     {
       title: "Article Drop",
       description:
-        "The idea is to generate interest in your site, build trust as an expert in your",
+        "The idea is to generate interest in your site, build trust as an expert in your career",
       icon: "💡",
     },
   ];
