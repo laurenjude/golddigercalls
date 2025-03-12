@@ -181,11 +181,10 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <motion.section
-        className="hero"
+        className="hero section-seperator"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+        transition={{ duration: 0.8 }}>
         <div className="container">
           <div className="hero-content">
             {/* Text Content */}
@@ -193,8 +192,7 @@ const Home = () => {
               className="hero-text"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
+              transition={{ duration: 0.8, delay: 0.2 }}>
               <h1>
                 Welcome to <span className="gold-text">Gold Diggers</span>
               </h1>
@@ -204,8 +202,7 @@ const Home = () => {
                   className="cta-button"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, delay: 0.6 }}
-                >
+                  transition={{ duration: 0.8, delay: 0.6 }}>
                   Get Started
                 </motion.button>
               </Link>
@@ -216,18 +213,23 @@ const Home = () => {
               className="hero-image"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              <img src={heroimage} alt="Gold Diggers" />
+              transition={{ duration: 0.8, delay: 0.4 }}>
+              <img
+                src={heroimage}
+                alt="Gold Diggers"
+                loading="lazy"
+              />
             </motion.div>
           </div>
         </div>
       </motion.section>
 
       {/* Services Section */}
-      <section className="services">
+      <section className="services section-seperator">
         <div className="container">
-          <Link to="/services" onClick={scrollToTop}>
+          <Link
+            to="/services"
+            onClick={scrollToTop}>
             <h2>Our Services</h2>
           </Link>
           <div className="services-grid">
@@ -237,8 +239,7 @@ const Home = () => {
                 className="service-card"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-              >
+                transition={{ duration: 0.5, delay: index * 0.2 }}>
                 <div className="service-icon">{service.icon}</div>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
@@ -249,31 +250,30 @@ const Home = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="about">
+      <section className="about section-seperator">
         <div className="container">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+            transition={{ duration: 0.8 }}>
             About Us
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+            transition={{ duration: 0.8, delay: 0.2 }}>
             No 1 African leading incubator & 𝗺𝗮𝗿𝗸𝗲𝘁𝗶𝗻𝗴 𝗳𝗶𝗿𝗺 bringing web3 to
             Africa we are also exploring the intergration of Decentralised
             Physical infrastructure Network DePIN and RWA into our strategy.
           </motion.p>
-          <Link to="/about" onClick={scrollToTop}>
+          <Link
+            to="/about"
+            onClick={scrollToTop}>
             <motion.button
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="cta-button"
-            >
+              className="cta-button">
               Learn More
             </motion.button>
           </Link>
@@ -281,18 +281,19 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="testimonials">
+      <section className="testimonials section-seperator">
         <div className="container">
           <h2>What Our Clients Say</h2>
-          <Link to="/projects" onClick={scrollToTop}>
+          <Link
+            to="/projects"
+            onClick={scrollToTop}>
             <Swiper
               modules={[Pagination, Autoplay]}
               spaceBetween={30}
               slidesPerView={1}
               pagination={{ clickable: true }}
               autoplay={{ delay: 5000 }}
-              loop={true}
-            >
+              loop={true}>
               {testimonials.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
                   <div className="testimonial-card">
@@ -308,25 +309,45 @@ const Home = () => {
       </section>
 
       {/* Partners Section */}
-      <section className="partners-section">
+      <section className="partners-section section-seperator">
         <div className="container">
           <h2>Our Partners</h2>
-          <div className="partners-container" ref={partnersRef}>
+          <div
+            className="partners-container"
+            ref={partnersRef}>
             <div className="partners-track">
-              <img src={first} alt="Partner 1" />
-              <img src={second} alt="Partner 2" />
-              <img src={third} alt="Partner 3" />
+              <img
+                src={first}
+                alt="Partner 1"
+              />
+              <img
+                src={second}
+                alt="Partner 2"
+              />
+              <img
+                src={third}
+                alt="Partner 3"
+              />
               {/* Duplicate images for seamless looping */}
-              <img src={first} alt="Partner 1" />
-              <img src={second} alt="Partner 2" />
-              <img src={third} alt="Partner 3" />
+              <img
+                src={first}
+                alt="Partner 1"
+              />
+              <img
+                src={second}
+                alt="Partner 2"
+              />
+              <img
+                src={third}
+                alt="Partner 3"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Results Section */}
-      <section className="results-section">
+      <section className="results-section section-seperator">
         <div className="container">
           <h2>Our Achievements</h2>
           <div className="achievements-grid">
@@ -337,8 +358,7 @@ const Home = () => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                style={{ backgroundImage: `url(${achievement.image})` }}
-              >
+                style={{ backgroundImage: `url(${achievement.image})` }}>
                 <div className="overlay"></div>
                 <div className="content">
                   <div className="icon">{achievement.icon}</div>
@@ -366,8 +386,7 @@ const Home = () => {
             className="motivational-statement"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+            transition={{ duration: 0.8, delay: 0.2 }}>
             <p>
               Accelerate your Web3 success, unlocking potential through a
               seamless journey.
@@ -377,11 +396,13 @@ const Home = () => {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="cta">
+      <section className="cta section-seperator">
         <div className="container">
           <h2>Ready to Transform Your Business?</h2>
           <p>Join us today and take your project to the next level.</p>
-          <Link to="/contact" onClick={scrollToTop}>
+          <Link
+            to="/contact"
+            onClick={scrollToTop}>
             <button className="cta-button">Contact Us</button>
           </Link>
         </div>

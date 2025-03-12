@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaYoutube,
   FaTiktok,
+  FaBloggerB,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6"; // X logo for Twitter
 import { FaTelegram } from "react-icons/fa"; // Telegram logo
@@ -28,22 +29,30 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul>
               <li>
-                <Link to="/" onClick={scrollToTop}>
+                <Link
+                  to="/"
+                  onClick={scrollToTop}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/services" onClick={scrollToTop}>
+                <Link
+                  to="/services"
+                  onClick={scrollToTop}>
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/about" onClick={scrollToTop}>
+                <Link
+                  to="/about"
+                  onClick={scrollToTop}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" onClick={scrollToTop}>
+                <Link
+                  to="/contact"
+                  onClick={scrollToTop}>
                   Contact Us
                 </Link>
               </li>
@@ -57,51 +66,50 @@ const Footer = () => {
               <a
                 href="https://t.me/golddigerscalls"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaTelegram />
               </a>
               <a
                 href="https://youtube.com/@golddiggerscall?si=cSF38C9AtHdu354B"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaYoutube />
               </a>
               <a
                 href="https://www.facebook.com/share/75x3buvLoZJZitUQ/?mibextid=LQQJ4d"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaFacebook />
               </a>
               <a
                 href="https://www.tiktok.com/@golddiggerscall?_t=8p7RTzxx7KQ&_r=1"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaTiktok />
               </a>
               <a
                 href="https://www.instagram.com/golddiggerscalls?igsh=NnVqbTU0NnMzbW96&utm_source=qr"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaInstagram />
               </a>
               <a
                 href="https://x.com/golddigerscalls"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaXTwitter />
               </a>
               <a
                 href="https://linktr.ee/golddiggerscall"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaLinkedin />
+              </a>
+              <a
+                href="https://golddiggerscalls.blogspot.com/?m=1"
+                target="_blank"
+                rel="noopener noreferrer">
+                <FaBloggerB />
               </a>
             </div>
           </div>
@@ -110,7 +118,11 @@ const Footer = () => {
           <div className="newsletter">
             <h3>Subscribe to Our Newsletter</h3>
             <form>
-              <input type="email" placeholder="Enter your email" required />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
               <button type="submit">Subscribe</button>
             </form>
           </div>
