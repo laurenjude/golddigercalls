@@ -28,7 +28,7 @@ const AboutPage = () => {
         },
         {
           platform: "Telegram",
-          link: "https://t.me/crypto22tomoon",
+          link: "https://t.me/batmandarknight_hero",
           icon: <FaTelegram />,
         },
       ],
@@ -108,13 +108,13 @@ const AboutPage = () => {
     },
     {
       id: 6,
-      name: "Author Drey",
+      name: "sebastain cheek",
       role: "Marketer",
       image: author,
       socials: [
         {
           platform: "Telegram",
-          link: "https://t.me/authordrey",
+          link: "https://t.me/sebastaincheek",
           icon: <FaTelegram />,
         },
       ],
@@ -185,8 +185,7 @@ const AboutPage = () => {
         className="about-hero"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+        transition={{ duration: 0.8 }}>
         <div className="container">
           {/* Empty container for the image background */}
         </div>
@@ -197,8 +196,7 @@ const AboutPage = () => {
         className="about-writeup"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+        transition={{ duration: 0.8 }}>
         <div className="container">
           <h2>ABOUT US</h2>
           <h1>Welcome to GOLDDIGGERS</h1>
@@ -219,8 +217,7 @@ const AboutPage = () => {
         className="about-mission"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+        transition={{ duration: 0.8 }}>
         <div className="container">
           <h2>Our Mission</h2>
           <p>
@@ -236,8 +233,7 @@ const AboutPage = () => {
         className="about-team"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+        transition={{ duration: 0.8 }}>
         <div className="container">
           <h2>Our Team</h2>
           <div className="team-grid">
@@ -246,9 +242,11 @@ const AboutPage = () => {
                 key={member.id}
                 className="team-member"
                 whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img src={member.image} alt={member.name} />
+                transition={{ duration: 0.3 }}>
+                <img
+                  src={member.image}
+                  alt={member.name}
+                />
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
                 <div className="social-handles">
@@ -257,8 +255,7 @@ const AboutPage = () => {
                       key={index}
                       href={social.link}
                       target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                      rel="noopener noreferrer">
                       {social.icon}
                     </a>
                   ))}
@@ -274,8 +271,7 @@ const AboutPage = () => {
         className="about-values"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+        transition={{ duration: 0.8 }}>
         <div className="container">
           <h2>Our Values</h2>
           <div className="values-grid">
@@ -284,8 +280,7 @@ const AboutPage = () => {
                 key={value.id}
                 className="value-card"
                 whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
+                transition={{ duration: 0.3 }}>
                 <h3>{value.title}</h3>
                 <p>{value.description}</p>
               </motion.div>
