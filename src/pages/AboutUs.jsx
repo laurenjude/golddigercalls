@@ -145,19 +145,6 @@ const AboutPage = () => {
         },
       ],
     },
-    {
-      id: 9,
-      name: "Robert",
-      role: "Marketer",
-      image: rob,
-      socials: [
-        {
-          platform: "Telegram",
-          link: "https://t.me/Rocha_Roberto",
-          icon: <FaTelegram />,
-        },
-      ],
-    },
   ];
 
   const values = [
